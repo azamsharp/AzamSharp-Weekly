@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="y8R-ew-cwe">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Photos-->
+        <scene sceneID="GHO-yI-hIY">
+            <objects>
+                <collectionViewController id="Xfj-Yh-FHd" customClass="PhotosCollectionViewController" customModule="PhotoLibrary_Display_Photos" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="xbs-0Z-n2B">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="a5A-Ht-oCv">
+                            <size key="itemSize" width="100" height="100"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoCollectionViewCell" id="T6f-6z-FE6" customClass="PhotoCollectionViewCell" customModule="PhotoLibrary_Display_Photos" customModuleProvider="target">
+                                <rect key="frame" x="10" y="10" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1EO-T1-ZU1">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        </imageView>
+                                    </subviews>
+                                </view>
+                                <constraints>
+                                    <constraint firstItem="1EO-T1-ZU1" firstAttribute="leading" secondItem="T6f-6z-FE6" secondAttribute="leading" id="Eeu-09-Fxj"/>
+                                    <constraint firstItem="1EO-T1-ZU1" firstAttribute="top" secondItem="T6f-6z-FE6" secondAttribute="top" id="GvT-fh-tfQ"/>
+                                    <constraint firstItem="1EO-T1-ZU1" firstAttribute="height" secondItem="T6f-6z-FE6" secondAttribute="height" id="Vag-sx-VFh"/>
+                                    <constraint firstItem="1EO-T1-ZU1" firstAttribute="width" secondItem="T6f-6z-FE6" secondAttribute="width" id="rMp-Dd-yuu"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="photoImageView" destination="1EO-T1-ZU1" id="W5S-CC-yeO"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="Xfj-Yh-FHd" id="oe4-Ul-Xsy"/>
+                            <outlet property="delegate" destination="Xfj-Yh-FHd" id="yhE-wr-rGT"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="Photos" id="ZFF-TI-OK4"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vBC-id-b7W" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="984.79999999999995" y="142.57871064467767"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="0ZO-vu-sLQ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="y8R-ew-cwe" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ydt-aP-mhn">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Xfj-Yh-FHd" kind="relationship" relationship="rootViewController" id="tRa-1C-Bll"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OjF-aI-vc8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="180" y="142.57871064467767"/>
+        </scene>
+    </scenes>
+</document>
