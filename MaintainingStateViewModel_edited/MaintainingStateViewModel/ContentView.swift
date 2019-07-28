@@ -17,9 +17,13 @@ struct ContentView: View {
     private var authenticationService: AuthenticationService
     @ObjectBinding private var loginVM: LoginViewModel
     
+    var link: NavigationDestinationLink<Text>
+    
     init() {
         self.authenticationService = AuthenticationService()
         self.loginVM = LoginViewModel(authService: self.authenticationService)
+        
+        self.link = NavigationDestinationLink(Text("Home"))
     }
     
     var body: some View {
@@ -32,6 +36,7 @@ struct ContentView: View {
             SecureField(self.$loginVM.password, placeholder: Text("Enter password")).padding().border(Color.gray, width: 1)
             Button("Login") {
                 self.loginVM.login()
+                self.link.presented?.value = self.loginVM.isLoggedIn
             }
             
             Text(self.loginVM.isLoggedIn ? "LOGGED IN" : "NOT LOGGED IN")
