@@ -1,0 +1,408 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8D99301522F1C5020094CE89 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D99301422F1C5020094CE89 /* CoreDataManager.swift */; };
+		8D99301722F1C6480094CE89 /* OrderListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D99301622F1C6480094CE89 /* OrderListViewModel.swift */; };
+		8DA739BA22F1A3DD0044E19C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA739B922F1A3DD0044E19C /* AppDelegate.swift */; };
+		8DA739BC22F1A3DD0044E19C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA739BB22F1A3DD0044E19C /* SceneDelegate.swift */; };
+		8DA739BF22F1A3DD0044E19C /* HotCoffeeApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8DA739BD22F1A3DD0044E19C /* HotCoffeeApp.xcdatamodeld */; };
+		8DA739C122F1A3DE0044E19C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA739C022F1A3DE0044E19C /* ContentView.swift */; };
+		8DA739C322F1A3DF0044E19C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DA739C222F1A3DF0044E19C /* Assets.xcassets */; };
+		8DA739C622F1A3DF0044E19C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DA739C522F1A3DF0044E19C /* Preview Assets.xcassets */; };
+		8DA739C922F1A3DF0044E19C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DA739C722F1A3DF0044E19C /* LaunchScreen.storyboard */; };
+		8DA739D522F1A72A0044E19C /* NSManagedObjectContext+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA739D422F1A72A0044E19C /* NSManagedObjectContext+Extensions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8D99301422F1C5020094CE89 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CoreDataManager.swift; path = ../../../../../../System/Volumes/Data/Users/azamsharp/Desktop/HotCoffeeApp/HotCoffeeApp/Managers/CoreDataManager.swift; sourceTree = "<group>"; };
+		8D99301622F1C6480094CE89 /* OrderListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OrderListViewModel.swift; path = "../../../../../../System/Volumes/Data/Users/azamsharp/Desktop/HotCoffeeApp/HotCoffeeApp/View Models/OrderListViewModel.swift"; sourceTree = "<group>"; };
+		8DA739B622F1A3DD0044E19C /* HotCoffeeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HotCoffeeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DA739B922F1A3DD0044E19C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8DA739BB22F1A3DD0044E19C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8DA739BE22F1A3DD0044E19C /* HotCoffeeApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HotCoffeeApp.xcdatamodel; sourceTree = "<group>"; };
+		8DA739C022F1A3DE0044E19C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8DA739C222F1A3DF0044E19C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8DA739C522F1A3DF0044E19C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8DA739C822F1A3DF0044E19C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8DA739CA22F1A3DF0044E19C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DA739D422F1A72A0044E19C /* NSManagedObjectContext+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSManagedObjectContext+Extensions.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8DA739B322F1A3DD0044E19C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8DA739AD22F1A3DD0044E19C = {
+			isa = PBXGroup;
+			children = (
+				8DA739B822F1A3DD0044E19C /* HotCoffeeApp */,
+				8DA739B722F1A3DD0044E19C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8DA739B722F1A3DD0044E19C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8DA739B622F1A3DD0044E19C /* HotCoffeeApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8DA739B822F1A3DD0044E19C /* HotCoffeeApp */ = {
+			isa = PBXGroup;
+			children = (
+				8DA739D922F1ABCC0044E19C /* Views */,
+				8DA739D622F1AAF50044E19C /* View Models */,
+				8DA739D322F1A7100044E19C /* Extensions */,
+				8DA739D022F1A6090044E19C /* Managers */,
+				8DA739B922F1A3DD0044E19C /* AppDelegate.swift */,
+				8DA739BB22F1A3DD0044E19C /* SceneDelegate.swift */,
+				8DA739C222F1A3DF0044E19C /* Assets.xcassets */,
+				8DA739C722F1A3DF0044E19C /* LaunchScreen.storyboard */,
+				8DA739CA22F1A3DF0044E19C /* Info.plist */,
+				8DA739BD22F1A3DD0044E19C /* HotCoffeeApp.xcdatamodeld */,
+				8DA739C422F1A3DF0044E19C /* Preview Content */,
+			);
+			path = HotCoffeeApp;
+			sourceTree = "<group>";
+		};
+		8DA739C422F1A3DF0044E19C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				8DA739C522F1A3DF0044E19C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8DA739D022F1A6090044E19C /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				8D99301422F1C5020094CE89 /* CoreDataManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		8DA739D322F1A7100044E19C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8DA739D422F1A72A0044E19C /* NSManagedObjectContext+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8DA739D622F1AAF50044E19C /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				8D99301622F1C6480094CE89 /* OrderListViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		8DA739D922F1ABCC0044E19C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8DA739C022F1A3DE0044E19C /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8DA739B522F1A3DD0044E19C /* HotCoffeeApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8DA739CD22F1A3DF0044E19C /* Build configuration list for PBXNativeTarget "HotCoffeeApp" */;
+			buildPhases = (
+				8DA739B222F1A3DD0044E19C /* Sources */,
+				8DA739B322F1A3DD0044E19C /* Frameworks */,
+				8DA739B422F1A3DD0044E19C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HotCoffeeApp;
+			productName = HotCoffeeApp;
+			productReference = 8DA739B622F1A3DD0044E19C /* HotCoffeeApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8DA739AE22F1A3DD0044E19C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "Mohammad Azam";
+				TargetAttributes = {
+					8DA739B522F1A3DD0044E19C = {
+						CreatedOnToolsVersion = 11.0;
+					};
+				};
+			};
+			buildConfigurationList = 8DA739B122F1A3DD0044E19C /* Build configuration list for PBXProject "HotCoffeeApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8DA739AD22F1A3DD0044E19C;
+			productRefGroup = 8DA739B722F1A3DD0044E19C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8DA739B522F1A3DD0044E19C /* HotCoffeeApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8DA739B422F1A3DD0044E19C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DA739C922F1A3DF0044E19C /* LaunchScreen.storyboard in Resources */,
+				8DA739C622F1A3DF0044E19C /* Preview Assets.xcassets in Resources */,
+				8DA739C322F1A3DF0044E19C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8DA739B222F1A3DD0044E19C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D99301522F1C5020094CE89 /* CoreDataManager.swift in Sources */,
+				8DA739BA22F1A3DD0044E19C /* AppDelegate.swift in Sources */,
+				8DA739BF22F1A3DD0044E19C /* HotCoffeeApp.xcdatamodeld in Sources */,
+				8DA739C122F1A3DE0044E19C /* ContentView.swift in Sources */,
+				8D99301722F1C6480094CE89 /* OrderListViewModel.swift in Sources */,
+				8DA739BC22F1A3DD0044E19C /* SceneDelegate.swift in Sources */,
+				8DA739D522F1A72A0044E19C /* NSManagedObjectContext+Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8DA739C722F1A3DF0044E19C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8DA739C822F1A3DF0044E19C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8DA739CB22F1A3DF0044E19C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8DA739CC22F1A3DF0044E19C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8DA739CE22F1A3DF0044E19C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "HotCoffeeApp/Preview\\ Content";
+				DEVELOPMENT_TEAM = B2Q8EGNCQA;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = HotCoffeeApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.azamsharp.HotCoffeeApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8DA739CF22F1A3DF0044E19C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "HotCoffeeApp/Preview\\ Content";
+				DEVELOPMENT_TEAM = B2Q8EGNCQA;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = HotCoffeeApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.azamsharp.HotCoffeeApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8DA739B122F1A3DD0044E19C /* Build configuration list for PBXProject "HotCoffeeApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DA739CB22F1A3DF0044E19C /* Debug */,
+				8DA739CC22F1A3DF0044E19C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8DA739CD22F1A3DF0044E19C /* Build configuration list for PBXNativeTarget "HotCoffeeApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DA739CE22F1A3DF0044E19C /* Debug */,
+				8DA739CF22F1A3DF0044E19C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8DA739BD22F1A3DD0044E19C /* HotCoffeeApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8DA739BE22F1A3DD0044E19C /* HotCoffeeApp.xcdatamodel */,
+			);
+			currentVersion = 8DA739BE22F1A3DD0044E19C /* HotCoffeeApp.xcdatamodel */;
+			path = HotCoffeeApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 8DA739AE22F1A3DD0044E19C /* Project object */;
+}
