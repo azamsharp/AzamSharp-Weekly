@@ -1,8 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:hello_networking/movie.dart';
 import 'package:hello_networking/webservice.dart';
+import 'package:hello_networking/webservice.dart' as prefix0;
+import 'package:provider/provider.dart';
 
-void main() => runApp(App());
+void main() => runApp(
+    ChangeNotifierProvider(
+      builder: (context) => Webservice(),
+      child: App()
+    ));
 
 class App extends StatefulWidget {
 
@@ -13,7 +19,7 @@ class App extends StatefulWidget {
 
 class _AppState extends State<App> {
 
-  List<Movie> _movies = List<Movie>(); 
+  final webservice = Webservice(); 
 
   @override
   void initState() {
@@ -22,28 +28,46 @@ class _AppState extends State<App> {
   }
 
   void _loadMovies() async {
-    final results = await Webservice().loadMovies();
-    setState(() {
-      _movies = results; 
-    });
+      await this.webservice.loadMovies(); 
   }
 
   @override
   Widget build(BuildContext context) {
+
+    final ws = Provider.of<Webservice>(context);
 
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
           title: Text("Movies")
         ),
-        body: ListView.builder(
-          itemCount: _movies.length,
-          itemBuilder: (context, index) {
-            return ListTile(
-              leading: Image.network(_movies[index].poster),
-              title: Text(_movies[index].title)
-            );
-          },
+        body: Stack(
+          children: <Widget>[
+            ListView.builder(
+              itemCount: ws.movies.length,
+              itemBuilder: (context, index) {
+                return ListTile(
+                  leading: Image.network(ws.movies[index].poster),
+                  title: Text(ws.movies[index].title)
+                );
+              },
+            ),
+            SafeArea(
+                  child: Align(
+                  alignment: Alignment.bottomRight,
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: FloatingActionButton(
+                    onPressed: () {
+                        this.webservice.toggleState(); // does not work 
+                       // Webservice().loadMovies(); // does not work 
+                    }, 
+                    child: Icon(Icons.refresh),
+                ),
+                  ),
+              ),
+            )
+          ],
         )
       )
     );

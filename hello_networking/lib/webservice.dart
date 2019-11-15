@@ -2,12 +2,19 @@
 import 'dart:convert';
 
 
+import 'package:flutter/material.dart';
 import 'package:hello_networking/movie.dart';
 import 'package:http/http.dart' as http;
 
-class Webservice {
+class Webservice extends ChangeNotifier {
 
-  Future<List<Movie>> loadMovies() async {
+  List<Movie> movies = List<Movie>(); 
+
+  void toggleState() {
+    notifyListeners(); 
+  }
+
+  Future<void> loadMovies() async {
 
     String url = "http://www.omdbapi.com/?s=batman&apikey=564727fa"; 
     final response = await http.get(url);
@@ -16,7 +23,9 @@ class Webservice {
 
       final json = jsonDecode(response.body); 
       final Iterable list = json["Search"];
-      return list.map((item) => Movie.fromJSON(item)).toList();
+      this.movies = list.map((item) => Movie.fromJSON(item)).toList();
+      debugPrint("${this.movies}");
+      notifyListeners(); 
 
     } else {
       throw Exception("Error loading movies...");
