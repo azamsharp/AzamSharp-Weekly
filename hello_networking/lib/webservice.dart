@@ -8,9 +8,11 @@ import 'package:http/http.dart' as http;
 
 class Webservice extends ChangeNotifier {
 
-  List<Movie> movies = List<Movie>(); 
+  List<Movie> movies = List<Movie>();
+  int value = 0;  
 
   void toggleState() {
+    this.value = 99; 
     notifyListeners(); 
   }
 

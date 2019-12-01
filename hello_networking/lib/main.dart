@@ -1,35 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:hello_networking/movie.dart';
 import 'package:hello_networking/webservice.dart';
-import 'package:hello_networking/webservice.dart' as prefix0;
 import 'package:provider/provider.dart';
 
 void main() => runApp(
-    ChangeNotifierProvider(
+    ChangeNotifierProvider<Webservice>(
       builder: (context) => Webservice(),
       child: App()
     ));
 
-class App extends StatefulWidget {
 
-  @override 
-  _AppState createState() => _AppState(); 
-
-}
-
-class _AppState extends State<App> {
-
-  final webservice = Webservice(); 
-
-  @override
-  void initState() {
-    super.initState();
-    _loadMovies();
-  }
-
-  void _loadMovies() async {
-      await this.webservice.loadMovies(); 
-  }
+class App extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
@@ -39,7 +19,7 @@ class _AppState extends State<App> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Movies")
+          title: Text("${ws.value}")
         ),
         body: Stack(
           children: <Widget>[
@@ -59,8 +39,8 @@ class _AppState extends State<App> {
                     padding: const EdgeInsets.all(8.0),
                     child: FloatingActionButton(
                     onPressed: () {
-                        this.webservice.toggleState(); // does not work 
-                       // Webservice().loadMovies(); // does not work 
+                        //ws.toggleState(); // does not work 
+                        ws.loadMovies(); // does not work 
                     }, 
                     child: Icon(Icons.refresh),
                 ),
