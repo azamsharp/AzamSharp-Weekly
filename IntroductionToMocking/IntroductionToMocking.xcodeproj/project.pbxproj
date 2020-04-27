@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03AF706E2456FC58000FD1B8 /* HTTPClientFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D60738224560F140001A2AF /* HTTPClientFactory.swift */; };
+		03AF706F2456FC59000FD1B8 /* HTTPClientFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D60738224560F140001A2AF /* HTTPClientFactory.swift */; };
+		03AF70702456FC70000FD1B8 /* HTTPClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D60737924560A200001A2AF /* HTTPClientProtocol.swift */; };
+		03AF70712456FC73000FD1B8 /* HTTPClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D60737924560A200001A2AF /* HTTPClientProtocol.swift */; };
+		03AF70722456FC8E000FD1B8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6073732455209A0001A2AF /* User.swift */; };
+		03AF70732456FC95000FD1B8 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D607375245526180001A2AF /* HTTPClient.swift */; };
+		03AF70742456FCAE000FD1B8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6073732455209A0001A2AF /* User.swift */; };
+		03AF70752456FCBB000FD1B8 /* MockedHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7A76272456211000A6E054 /* MockedHTTPClient.swift */; };
+		03AF70762456FCCA000FD1B8 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D607375245526180001A2AF /* HTTPClient.swift */; };
 		8D60733B245515F60001A2AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D60733A245515F60001A2AF /* AppDelegate.swift */; };
 		8D60733D245515F60001A2AF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D60733C245515F60001A2AF /* SceneDelegate.swift */; };
 		8D60733F245515F60001A2AF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D60733E245515F60001A2AF /* ContentView.swift */; };
@@ -356,7 +365,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03AF70742456FCAE000FD1B8 /* User.swift in Sources */,
+				03AF70752456FCBB000FD1B8 /* MockedHTTPClient.swift in Sources */,
+				03AF70762456FCCA000FD1B8 /* HTTPClient.swift in Sources */,
 				8D607352245515F80001A2AF /* IntroductionToMockingTests.swift in Sources */,
+				03AF70712456FC73000FD1B8 /* HTTPClientProtocol.swift in Sources */,
+				03AF706F2456FC59000FD1B8 /* HTTPClientFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,7 +378,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03AF70702456FC70000FD1B8 /* HTTPClientProtocol.swift in Sources */,
+				03AF706E2456FC58000FD1B8 /* HTTPClientFactory.swift in Sources */,
+				03AF70732456FC95000FD1B8 /* HTTPClient.swift in Sources */,
 				8D60735D245515F80001A2AF /* IntroductionToMockingUITests.swift in Sources */,
+				03AF70722456FC8E000FD1B8 /* User.swift in Sources */,
 				8D7A76282456211000A6E054 /* MockedHTTPClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -446,7 +464,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -500,7 +518,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -519,6 +537,7 @@
 				DEVELOPMENT_TEAM = B2Q8EGNCQA;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = IntroductionToMocking/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -539,6 +558,7 @@
 				DEVELOPMENT_TEAM = B2Q8EGNCQA;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = IntroductionToMocking/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
