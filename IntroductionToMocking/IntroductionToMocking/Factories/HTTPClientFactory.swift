@@ -9,15 +9,7 @@
 import Foundation
 
 class HTTPClientFactory {
-    
     static func create() -> HTTPClientProtocol {
-        
-        let enviromment = ProcessInfo.processInfo.environment["ENV"]
-        if enviromment == "TEST" {
-            return MockedHTTPClient()
-        } else {
-            return HTTPClient()
-        }
+        ProcessInfo.processInfo.environment["mockingEnvironment", default: "False"] == "True" ? MockedHTTPClient() : HTTPClient()
     }
-    
 }
