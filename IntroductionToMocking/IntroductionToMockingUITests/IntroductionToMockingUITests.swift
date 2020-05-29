@@ -17,7 +17,7 @@ class when_user_login_successfully: XCTestCase {
         super.setUp()
         self.app = XCUIApplication()
         self.continueAfterFailure = true
-        self.app.launchEnvironment = ["ENV": "TEST"]
+        self.app.launchEnvironment = ["mockingEnvironment": "True"]
         self.app.launch()
     }
     

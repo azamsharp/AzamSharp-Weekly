@@ -7,7 +7,7 @@
 //
 
 import Foundation
-@testable import IntroductionToMocking
+//@testable import IntroductionToMocking This doesn't make any sense
 
 class MockedHTTPClient: HTTPClientProtocol {
     
